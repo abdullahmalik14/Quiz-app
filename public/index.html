@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="nextQuestion()"> 
+
+    <div class = "container">
+        
+        
+        <div class="headingQuiz">
+           <h1> Quiz Application</h1>
+
+           <div class="main-left-timer">
+           <div>
+            <span id="timer" class="timer"> 2:00</span>
+        </div>
+        
+        <div >
+            <h4 class="leftTime">Time Left</h4>
+        </div>
+    </div>
+    <div>
+        <h3 class="heading-total">Total Questions: 10</h3>
+    </div>
+           
+        </div>
+
+        
+
+        <p id="displayQues" class="displayQuestion"> Q:</p>
+        
+        <div class="opt1">
+        <input onclick="clicked()" type="radio" value="1" name="options">
+        <label id="opt1" ></label>
+        </div>
+        <br>
+
+
+        <div class="opt2">
+        <input onclick="clicked()" type="radio" value="2" name="options">
+        <label id="opt2"  ></label>
+        </div>
+        <br>
+
+        <div class="opt3">
+        <input onclick="clicked()" type="radio" value="3" name="options">
+        <label id="opt3"></label>
+        </div>
+        <br>
+
+        <div class="opt4">
+        <input onclick="clicked()" type="radio" value="4" name="options">
+        <label id="opt4"></label>
+        </div>
+        <br>
+        <br>
+
+        <button  id="btn" disabled onclick="nextQuestion()" class="button">Next</button>
+    </div>
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="app.js"></script>
+</body>
+</html>
